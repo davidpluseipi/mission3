@@ -1,0 +1,26 @@
+# AerE 361 GitHub action
+# Checks for Makrdown file and triggers Autograder
+# Professor Nelson
+name: Autograding
+on: [push]
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Check that they created the markdown file
+      - name: Check for Markdown file
+        id: check_markdown
+      # You may pin to the exact commit or the version.
+      # uses: andstor/file-existence-action@87d74d4732ddb824259d80c8a508c0124bf1c673
+        uses: andstor/file-existence-action@v1.0.1
+        with:
+          # Comma separated string with paths to files and directories to check for existence.
+          files: README.md
+          allow_failure: true
+      - name: File checker
+        if: steps.check_files.outputs.files_exists == 'true'
+        run: echo Markdown file is present!
+# Runs the autograder test
+      - uses: education/autograding@v1

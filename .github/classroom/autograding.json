@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "Mission 3 Ex. 1 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex1.sh mission3.log",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Mission 3 Ex. 2 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex1.sh unixstuff/science.txt | bash tests/check_ex1.sh unixstuff/backups/science.bak",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Mission 3 Ex. 3 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex3.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Mission 3 Ex. 4 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex1.sh unixstuff/science.txt.gz",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Mission 3 Ex. 5 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex1.sh unixstuff/download/units-1.74.tar",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Mission 3 Ex. 6 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex6.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Mission 3 Ex. 7 Autograder",
+      "setup": "",
+      "run": "bash tests/check_ex7.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
